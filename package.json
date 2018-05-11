@@ -1,0 +1,42 @@
+{
+  "name": "apiendpoint",
+  "version": "0.0.1",
+  "description": "Abstraction layer for simplification of Express API endpoints",
+  "main": "lib/index.js",
+  "files": [
+    "src",
+    "lib"
+  ],
+  "scripts": {
+    "test": "npm run test:eslint",
+    "test:ava": "NODE_PATH=. ava \"src/**/_tests/*.test.js\" --timeout=10s",
+    "test:eslint": "eslint ./src --ext .js,.jsx",
+    "clean": "rimraf lib",
+    "compile": "babel src --out-dir lib",
+    "preversion": "npm run test",
+    "prepublish": "npm run compile",
+    "postpublish": "npm run clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henit/apiendpoint.git"
+  },
+  "author": "Henrik Haugberg <henrik.haugberg@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/henit/apiendpoint/issues"
+  },
+  "homepage": "https://github.com/henit/apiendpoint#readme",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.19.1",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "core-js": "^2.5.5",
+    "lodash": "^4.17.5"
+  }
+}
