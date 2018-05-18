@@ -1,5 +1,5 @@
 {
-  "name": "apiendpoint",
+  "name": "apiep",
   "version": "0.0.2",
   "description": "Abstraction layer for simplification of Express API endpoints",
   "main": "lib/index.js",
@@ -19,14 +19,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/henit/apiendpoint.git"
+    "url": "git+https://github.com/henit/apiep.git"
   },
   "author": "Henrik Haugberg <henrik.haugberg@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/henit/apiendpoint/issues"
+    "url": "https://github.com/henit/apiep/issues"
   },
-  "homepage": "https://github.com/henit/apiendpoint#readme",
+  "homepage": "https://github.com/henit/apiep#readme",
   "devDependencies": {
     "ava": "^0.25.0",
     "babel-cli": "^6.26.0",
