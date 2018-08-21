@@ -1,6 +1,6 @@
 {
   "name": "apiep",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Abstraction layer for simplification of Express API endpoints",
   "main": "lib/index.js",
   "files": [
