@@ -1,4 +1,3 @@
-// import endpoint from './endpoint';
-// export default endpoint;
-
+import endpoint from './endpoint';
+export default endpoint;
 export * from './endpoint';
